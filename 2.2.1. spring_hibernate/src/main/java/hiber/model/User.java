@@ -1,7 +1,5 @@
 package hiber.model;
 
-import org.hibernate.annotations.Cascade;
-
 import javax.persistence.*;
 
 @Entity
@@ -25,9 +23,7 @@ public class User {
 
    @OneToOne
    @JoinColumn(name = "id_car")
-   //
    @MapsId
-//   @Cascade(org.hibernate.annotations.CascadeType.ALL)
    private Car car;
 
    public Car getCar() {
