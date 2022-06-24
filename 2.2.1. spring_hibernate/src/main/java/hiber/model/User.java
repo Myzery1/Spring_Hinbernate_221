@@ -25,7 +25,9 @@ public class User {
 
    @OneToOne
    @JoinColumn(name = "id_car")
-   @Cascade(org.hibernate.annotations.CascadeType.ALL)
+   //
+   @MapsId
+//   @Cascade(org.hibernate.annotations.CascadeType.ALL)
    private Car car;
 
    public Car getCar() {

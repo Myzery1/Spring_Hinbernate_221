@@ -17,6 +17,9 @@ public class Car {
     @Column(name = "series")
     private int series;
 
+    @OneToOne
+    private User user;
+
     public Car() {}
 
     public Car(String model, int series) {
